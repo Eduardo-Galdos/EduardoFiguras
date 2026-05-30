@@ -23,7 +23,7 @@ int main(void){
   Turtle *t = turtleAppGetTurtle(app);
 
   turtlePenUp(t);
-  turtleGoTo(t, 50.0f, 100.0f);
+  turtleGoTo(t, 600.0f, 300.0f);
   turtlePenDown(t);
 
   turtleSetColor(t, 255, 100, 0);
