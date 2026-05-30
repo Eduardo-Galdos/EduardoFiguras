@@ -70,11 +70,11 @@ int main(void){
   Turtle *t = turtleAppGetTurtle(app);
 
   turtlePenUp(t);
-  turtleGoTo(t, 600.0f, 500.0f);
+  turtleGoTo(t, 600.0f, 600.0f);
   turtlePenDown(t);
 
   turtleSetColor(t, 255, 100, 0);
-  turtleSetSpeed(t, 10.0f);
+  turtleSetSpeed(t, 15.0f);
   turtleLeft(t, 90);
   ArbolFractalColoreado(t, 150, 8);
   //arbolfractal(t, 100, 4);
