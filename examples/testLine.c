@@ -7,9 +7,9 @@ void arbolfractal(Turtle* t, float length, int depth){
 
   turtleForward(t, length);
   turtleLeft(t, 30);
-  arbolfractal(t, length * 0.7, depth - 1);
+  arbolfractal(t, length * 0.8, depth - 1);
   turtleRight(t, 60);
-  arbolfractal(t, length * 0.7, depth - 1);
+  arbolfractal(t, length * 0.8, depth - 1);
 
   turtleLeft(t, 30);
   turtleBackward(t, length);
