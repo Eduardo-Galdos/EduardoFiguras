@@ -6,12 +6,12 @@ void arbolfractal(Turtle* t, float length, int depth){
     return;
 
   turtleForward(t, length);
-  turtleLeft(t, 20);
+  turtleLeft(t, 30);
   arbolfractal(t, length * 0.8, depth - 1);
-  turtleRight(t, 40);
+  turtleRight(t, 60);
   arbolfractal(t, length * 0.8, depth - 1);
 
-  turtleLeft(t, 20);
+  turtleLeft(t, 30);
   turtleBackward(t, length);
 
 }
