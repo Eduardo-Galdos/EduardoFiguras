@@ -74,10 +74,10 @@ int main(void){
   turtlePenDown(t);
 
   turtleSetColor(t, 255, 100, 0);
-  turtleSetSpeed(t, 15.0f);
+  turtleSetSpeed(t, 20.0f);
   turtleLeft(t, 90);
   //ArbolFractalColoreado(t, 150, 8);
-  arbolfractal(t, 100, 7);
+  arbolfractal(t, 100, 9);
   //CurvaDeLevy(t, 100, 4);
   turtleAppRun(app);
   turtleAppDestroy(app);
