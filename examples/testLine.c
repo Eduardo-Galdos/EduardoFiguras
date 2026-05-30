@@ -77,7 +77,7 @@ int main(void){
   turtleSetSpeed(t, 15.0f);
   turtleLeft(t, 90);
   //ArbolFractalColoreado(t, 150, 8);
-  //arbolfractal(t, 100, 4);
+  arbolfractal(t, 100, 4);
   //CurvaDeLevy(t, 100, 4);
   turtleAppRun(app);
   turtleAppDestroy(app);
