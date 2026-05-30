@@ -45,7 +45,7 @@ void ArbolFractalColoreado(Turtle* t, float length, int depth){
   turtleRight(t, 60);
   ArbolFractalColoreado(t, length * 0.8, depth - 1);
 
-  turtleRight(t, 30);
+  turtleLeft(t, 30);
   turtleBackward(t, length);
 }
 int main(void){
