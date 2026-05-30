@@ -33,10 +33,10 @@ void CurvaDeLevy(Turtle* t, float length, int depth){
 }
 
 void ArbolFractalColoreado(Turtle* t, float length, int depth){
-  if(depth == 0 || length < 5 || 0 + 20 * depth > 255 || 255  - 20 * depth < 0)
+  if(depth == 0 || length < 5 || 0 + 30 * depth > 255 || 255  - 30 * depth < 0)
     return;
 
-  turtleSetColor(t, 0 + 20 * depth, 255 - 20 * depth , 0);
+  turtleSetColor(t, 0 + 30 * depth, 255 - 30 * depth , 0);
   turtleForward(t, length);
 
   turtleLeft(t, 30);
