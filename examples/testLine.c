@@ -1,5 +1,19 @@
 #include "../turtlec.h"
 
+void arbolfractal(Turtle* t, float lenght, int depth){
+  if(depth == 0 || length < 5)
+    return;
+
+  turtleForward(t, lenght, depth);
+  turtleLeft(t, 30);
+  arbolfractal(t, length * 0.8, depth - 1 );
+  turtleRigth(t, 60);
+  arbolfractal(t, length * 0.8, depth - 1);
+
+  turtleLeft(t, 30);
+  turtleBackward(t, length, depth - 1);
+
+}
 int main(void){
   TurtleApp *app = turtleAppCreate(400, 200, "Test Line");
 
@@ -14,8 +28,7 @@ int main(void){
 
   turtleSetColor(t, 255, 100, 0);
   turtleSetSpeed(t, 5.0f);
-  turtleForward(t, 300.0f);
-
+  arbolfractal(t, 100, 0);
   turtleAppRun(app);
   turtleAppDestroy(app);
   return 0;
