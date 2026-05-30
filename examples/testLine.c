@@ -74,9 +74,9 @@ int main(void){
   turtlePenDown(t);
 
   turtleSetColor(t, 255, 100, 0);
-  turtleSetSpeed(t, 5.0f);
+  turtleSetSpeed(t, 10.0f);
   turtleLeft(t, 90);
-  ArbolFractalColoreado(t, 100, 5);
+  ArbolFractalColoreado(t, 150, 8);
   //arbolfractal(t, 100, 4);
   //CurvaDeLevy(t, 100, 4);
   turtleAppRun(app);
