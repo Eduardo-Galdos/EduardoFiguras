@@ -45,7 +45,7 @@ int main(void){
   turtleSetSpeed(t, 5.0f);
   //turtleLeft(t, 90);
   //arbolfractal(t, 100, 4);
-  CurvaDeLevy(t, 100, 1);
+  CurvaDeLevy(t, 100, 4);
   turtleAppRun(app);
   turtleAppDestroy(app);
   return 0;
