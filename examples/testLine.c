@@ -39,10 +39,10 @@ void ArbolFractalColoreadoHelper(Turtle* t, float length, int depth, int contras
   turtleForward(t, length);
 
   turtleLeft(t, 30);
-  ArbolFractalColoreado(t, length * 0.8, depth - 1, contraste);
+  ArbolFractalColoreadoHelper(t, length * 0.8, depth - 1, contraste);
 
   turtleRight(t, 60);
-  ArbolFractalColoreado(t, length * 0.8, depth - 1, contraste);
+  ArbolFractalColoreadoHelper(t, length * 0.8, depth - 1, contraste);
 
   turtlePenUp(t);
   turtleLeft(t, 30);
