@@ -15,7 +15,7 @@ void arbolfractal(Turtle* t, float length, int depth){
 
 }
 int main(void){
-  TurtleApp *app = turtleAppCreate(400, 200, "Test Line");
+  TurtleApp *app = turtleAppCreate(1200, 600, "Test Line");
 
   if(app == NULL)
     return 1;
