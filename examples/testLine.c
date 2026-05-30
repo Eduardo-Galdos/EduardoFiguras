@@ -1,17 +1,17 @@
 #include "../turtlec.h"
 
-void arbolfractal(Turtle* t, float lenght, int depth){
+void arbolfractal(Turtle* t, float length, int depth){
   if(depth == 0 || length < 5)
     return;
 
-  turtleForward(t, lenght, depth);
+  turtleForward(t, length);
   turtleLeft(t, 30);
-  arbolfractal(t, length * 0.8, depth - 1 );
-  turtleRigth(t, 60);
+  arbolfractal(t, length * 0.8, depth - 1);
+  turtleRight(t, 60);
   arbolfractal(t, length * 0.8, depth - 1);
 
   turtleLeft(t, 30);
-  turtleBackward(t, length, depth - 1);
+  turtleBackward(t, length);
 
 }
 int main(void){
