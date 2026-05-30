@@ -27,7 +27,8 @@ void CurvaDeLevy(Turtle* t, float length, int depth){
 
   turtleLeft(t, 90);
   CurvaDeLevy(t, length / sqrt(2), depth - 1);
-
+  
+  turtleRight(t, 45);
 }
 int main(void){
   TurtleApp *app = turtleAppCreate(1200, 600, "Test Line");
