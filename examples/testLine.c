@@ -4,7 +4,7 @@
 void arbolfractal(Turtle* t, float length, int depth){
   if(depth == 0 || length < 5)
     return;
-
+  
   turtleForward(t, length);
   turtleLeft(t, 30);
   arbolfractal(t, length * 0.8, depth - 1);
@@ -77,7 +77,7 @@ int main(void){
   turtleSetSpeed(t, 20.0f);
   turtleLeft(t, 90);
   //ArbolFractalColoreado(t, 150, 8);
-  arbolfractal(t, 100, 9);
+  arbolfractal(t, 100, 10);
   //CurvaDeLevy(t, 100, 4);
   turtleAppRun(app);
   turtleAppDestroy(app);
