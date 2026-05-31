@@ -22,13 +22,13 @@ void CurvaDeLevy(Turtle* t, float length, int depth){
     return;
   }
 
-  turtleRight(t, 45);
+  turtleLeft(t, 45);
   CurvaDeLevy(t, length / sqrt(2), depth - 1);
 
-  turtleLeft(t, 90);
+  turtleRight(t, 90);
   CurvaDeLevy(t, length / sqrt(2), depth - 1);
   
-  turtleRight(t, 45);
+  turtleLeft(t, 45);
 
 }
 void ArbolFractalColoreadoHelper(Turtle* t, float length, int depth, int contraste){
@@ -77,8 +77,8 @@ int main(void){
   turtleSetSpeed(t, 20.0f);
   turtleLeft(t, 90);
   //ArbolFractalColoreado(t, 150, 8);
-  arbolfractal(t, 100, 10);
-  //CurvaDeLevy(t, 100, 4);
+  //arbolfractal(t, 100, 10);
+  CurvaDeLevy(t, 100, 4);
   turtleAppRun(app);
   turtleAppDestroy(app);
   return 0;
