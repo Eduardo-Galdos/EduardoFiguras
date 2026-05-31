@@ -75,7 +75,6 @@ int main(void){
 
   turtleSetColor(t, 255, 100, 0);
   turtleSetSpeed(t, 20.0f);
-  turtleLeft(t, 90);
   //ArbolFractalColoreado(t, 150, 8);
   //arbolfractal(t, 100, 10);
   CurvaDeLevy(t, 100, 4);
